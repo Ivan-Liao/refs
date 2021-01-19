@@ -1,0 +1,13 @@
+anger <> love
+shame <> confidence
+disgust <> inspiration
+fear <> bravery
+happiness <> sadness
+shock <> anticipation
+distrust <> trust
+helpless <> in control
+
+excited = anticipation + happiness
+stressed = fear + helpless
+empty/numb = helpless + shock + distrust
+free = anticipation + happiness + in control
