@@ -2,30 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {Row, Col, Nav, Tab, Tabs, TabContainer, TabContent, TabPane} from 'react-bootstrap'
-
-function Sonnet() {
-	return (
-		<p>
-			test
-		</p>
-	);
-}
+import {Row, Col, Nav, Tab, Tabs, TabContainer, TabContent, TabPane} from 'react-bootstrap';
 
 function App() {
-  return (
-	<Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-	  <Tab eventKey="home" title="Home">
-	    <Sonnet />
-	  </Tab>
-	  <Tab eventKey="profile" title="Profile">
-	    <Sonnet />
-	  </Tab>
-	  <Tab eventKey="contact" title="Contact" disabled>
-	    <Sonnet />
-	  </Tab>
-	</Tabs>
-  );
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 }
 
 
