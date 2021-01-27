@@ -9,7 +9,7 @@ function SearchBar () {
         <Col md={2}>
           <img className="banner-icons" src={bannerLeft}></img>
         </Col>
-        <Col>
+        <Col md={7}>
           <InputGroup className="mb-3">
             <InputGroup.Prepend>
               <InputGroup.Text>
@@ -18,10 +18,8 @@ function SearchBar () {
             </InputGroup.Prepend>
             <FormControl placeholder="mountains, sea, Venice...">
             </FormControl>
+            <Button className="surprise-button" variant="primary">Go</Button>
           </InputGroup>
-        </Col>
-        <Col md={1}>
-          <Button className="surprise-button" variant="primary">Surprise Me!</Button>
         </Col>
         <Col md={2}>
           <img className="banner-icons" src={bannerRight}></img>
