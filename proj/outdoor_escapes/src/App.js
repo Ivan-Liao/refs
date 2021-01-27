@@ -20,7 +20,7 @@ function App() {
   }
   return (
     <React.Fragment>
-      <SearchBar videoList={videoList} setVideoList={setVideoList}/>
+      <SearchBar videoList={videoList} setVideoList={setVideoList} setCurVideo={setCurVideo} dataHardcopy={dataHardcopy}/>
       <YoutubeCarousel videoList={videoList} setVideoList={setVideoList} curVideo={curVideo} setCurVideo={setCurVideo}/>
     </React.Fragment>
   );

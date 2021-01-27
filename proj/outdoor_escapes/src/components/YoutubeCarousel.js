@@ -5,7 +5,7 @@ import nextIcon from '../images/gonext.png';
 
 
 function YoutubeCarousel({videoList, setVideoList, curVideo, setCurVideo}) {
-  var videoListLength=Object.keys(videoList).length - 1;
+  
   function prevButtonHandler() {
     if (curVideo > 0) {
       setCurVideo(curVideo-1)
@@ -13,7 +13,7 @@ function YoutubeCarousel({videoList, setVideoList, curVideo, setCurVideo}) {
   }
 
   function nextButtonHandler() {
-    if (curVideo < videoListLength) {
+    if (curVideo < Object.keys(videoList).length - 1) {
       setCurVideo(curVideo+1)
     }
   }
