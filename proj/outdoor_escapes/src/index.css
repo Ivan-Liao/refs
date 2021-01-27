@@ -21,7 +21,7 @@ code {
     monospace;
 }
 
-.surprise-button {
+.go-button {
   background-color: #68adf2;
 }
 
@@ -38,6 +38,7 @@ p {
 .col,
 .col-md-1,
 .col-md-2,
+.col-md-6,
 .col-md-7 {
   display: flex;
   align-items: center;
@@ -52,6 +53,7 @@ p {
 .prev-button {
   width: 100px;
   height: 300px;
+  background-color: #68adf2;
 }
 
 .next-button-img,

@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import YoutubeCarousel from './components/YoutubeCarousel';
 import SearchBar from './components/SearchBar';
-import dataHardcopy from './machathon_data3.json';
+import dataHardcopy from './machathon_data.json';
+
 
 function App() {
   // use states
@@ -19,7 +20,7 @@ function App() {
   }
   return (
     <React.Fragment>
-      <SearchBar />
+      <SearchBar videoList={videoList} setVideoList={setVideoList}/>
       <YoutubeCarousel videoList={videoList} setVideoList={setVideoList} curVideo={curVideo} setCurVideo={setCurVideo}/>
     </React.Fragment>
   );
