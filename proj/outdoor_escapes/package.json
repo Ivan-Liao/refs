@@ -1,5 +1,16 @@
 {
+  "scripts": {
+    "xdn": "xdn",
+    "xdn:dev": "xdn dev",
+    "xdn:build": "xdn build",
+    "xdn:deploy": "xdn deploy",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "name": "outdoor_escapes",
+  "homepage": "https://yourlifepack.com/outdoorescapes",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,12 +24,6 @@
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -37,5 +42,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@xdn/cli": "^2.41.0",
+    "@xdn/core": "^2.41.0",
+    "@xdn/devtools": "^2.41.0",
+    "@xdn/prefetch": "^2.41.0"
   }
 }
