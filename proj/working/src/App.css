@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  background: rgb(108, 130, 255);
+  width: 15rem;
+  height: 10rem;
+  border-radius: 10%;
+  margin: 3rem;
+}
