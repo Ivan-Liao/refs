@@ -11,7 +11,7 @@ html {
 body {
   min-height: 100vh;
   min-width: 100vw;
-  background: grey;
+  background: #404040;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,9 +19,17 @@ body {
 }
 
 .square {
-  background: rgb(108, 130, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #76bcf5;
   width: 15rem;
   height: 10rem;
   border-radius: 10%;
   margin: 3rem;
+  color: white;
 }
+
+.ripple-text {
+  text-align: center;
+  font-size: 1.5rem;}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from "react-bootstrap";
 import anime from "animejs";
 
-function RippleAnime() {
+function RippleAnime(props) {
   const animationRef = React.useRef(null);
   React.useEffect(() => {
     const interval = setInterval(() => {
@@ -22,40 +22,42 @@ function RippleAnime() {
   return (
     <React.Fragment>
       <div className="container">
-        <Button className="animateBtn" onClick={animationRef.current}>
-          Animate
-        </Button>
         <Container>
           <Row>
             <Col>
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
+              {props.rippleList.slice(0, 4).map((el) => (
+                <Button className="square">
+                  <p className="ripple-text">{el}</p>
+                </Button>
+              ))}
             </Col>
             <Col>
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
+              {props.rippleList.slice(4, 8).map((el) => (
+                <Button className="square">
+                  <p className="ripple-text">{el}</p>
+                </Button>
+              ))}
             </Col>
             <Col>
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
+              {props.rippleList.slice(8, 12).map((el) => (
+                <Button className="square">
+                  <p className="ripple-text">{el}</p>
+                </Button>
+              ))}
             </Col>
             <Col>
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
+              {props.rippleList.slice(12, 16).map((el) => (
+                <Button className="square">
+                  <p className="ripple-text">{el}</p>
+                </Button>
+              ))}
             </Col>
             <Col>
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
+              {props.rippleList.slice(16, 20).map((el) => (
+                <Button className="square">
+                  <p className="ripple-text">{el}</p>
+                </Button>
+              ))}
             </Col>
           </Row>
         </Container>

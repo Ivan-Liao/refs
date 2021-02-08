@@ -1,28 +1,50 @@
 * {
-  margin: 10;
-  padding: 10;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background: #404040;
   color: white;
   font-family: "Poppins", sans-serif;
-  max-height: 99vh;
+  max-height: 100vh;
   max-width: 99vw;
+}
+
+.nav-link {
+  color: white !important;
+  background-color: #76BCF5 !important;
 }
 
 .nav-link.active {
   color: white !important;
-  background-color: aqua !important;
+  background-color: #3B5A75 !important;
 }
+
+.feeling-btn.btn-primary:hover{
+  background-color: #3B5A75 !important;
+}
+.feeling-btn.btn-primary:focus{
+  background-color: #3B5A75;
+}
+.feeling-btn.btn-primary:active{
+  background-color: #3B5A75;
+}
+
 
 
 /* width should be 100/# tab elements % */
 .tab-selector {
-  width: 50%;
+  width: 15%;
   text-align: center;
   opacity: 0.9;
+  border-radius: 1rem;
+  margin: 0.05rem;
 }
 
 .flex-row{
@@ -39,4 +61,44 @@ body {
 .main-tab {
   font-size: 24px;
   text-align: center;
+  border: 5rem;
+}
+
+.feeling-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #76bcf5;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 10%;
+  margin: 6rem 1.5rem 6rem 1.5rem;
+  color: white;
+}
+
+.ripple-text {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.selected-feelings {
+  font-size: 3rem;
+}
+
+.breathe-text {
+  font-size: 5rem;
+  margin-top: 5rem;
+}
+
+.plan-text {
+  margin-top: 5rem;
+}
+
+textarea {
+  text-align: center;
+}
+
+.handwriting-area {
+  font-family: "Indie Flower";
+  font-size: 3rem;
 }
