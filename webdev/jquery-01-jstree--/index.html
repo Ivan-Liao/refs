@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>jsTree</title>
+	<meta name="viewport" content="width=device-width" />
+	<!--[if lt IE 9]><script src="//static.jstree.com/3.3.11/assets/html5.js"></script><![endif]-->
+
+	<meta name="robots" content="index,follow" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+</head>
+<body>
+    <div id="jstree">
+  	</div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#jstree').jstree({
+                "plugins": ["wholerow", "checkbox"],
+                "core": {
+                    "animation": 250,
+                    "data": [
+                        {
+                            "text": "Same but with checkboxes",
+                            "children": [
+                                { "text": "initially selected", "state": { "selected": true } },
+                                { "text": "custom icon URL", "icon": "//jstree.com/tree-icon.png" },
+                                {
+                                    "text": "initially open", "state": { "opened": true },
+                                    "children": ["Another node", "Another Another node"]
+                                },
+                                { "text": "custom icon class", "icon": "glyphicon glyphicon-leaf" }
+                            ]
+                        },
+                        "And wholerow selection"
+                    ]
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
