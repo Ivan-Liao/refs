@@ -1,4 +1,6 @@
-  
+# secrets and keys
+*_secrets.py
+
 # Logs
 logs
 *.log
