@@ -1,5 +1,8 @@
 # secrets and keys
-*_secrets.py
+*secrets.py
+
+# pycache
+__pycache__
 
 # Logs
 logs
