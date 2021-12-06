@@ -4,6 +4,11 @@
 # pycache
 __pycache__
 
+# test files
+play.ipynb
+play.py
+temp.py
+
 # Logs
 logs
 *.log
